@@ -7,4 +7,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation(project(":generator"))
+    kapt(project(":generator"))
+    annotationProcessor(project(":generator"))
+
 }
